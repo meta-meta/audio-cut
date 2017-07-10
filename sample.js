@@ -49,6 +49,16 @@ transcoder.createJob({
           Duration: '00:00:10.000',
         }
       }]
+    },
+    {
+      Key: filename + '-cut2.flac',
+      PresetId: flacPresetId,
+      Composition: [{
+        TimeSpan: {
+          StartTime: '00:00:10.000', //HH:mm:ss.SSS or sssss.SSS
+          Duration: '00:00:05.000',
+        }
+      }]
     }
   ]
 }, (err, data) => {
